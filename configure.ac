@@ -1,4 +1,5 @@
 AC_INIT([package], [version])
+AC_PROG_CC()
 AC_CONFIG_FILES([Makefile])
 AM_INIT_AUTOMAKE()
 AC_OUTPUT()
