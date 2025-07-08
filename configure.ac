@@ -1,2 +1,3 @@
 AC_INIT()
+AM_INIT()
 AC_OUTPUT()
