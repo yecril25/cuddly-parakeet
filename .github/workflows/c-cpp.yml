@@ -16,7 +16,7 @@ jobs:
     - name: autoreconf
       run: autoreconf -fi
     - name: get-help
-      run:  apt-get details automake
+      run:  apt-get show automake
     - name: configure
       run: ./configure
     - name: make
