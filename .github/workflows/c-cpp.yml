@@ -14,8 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: autoreconf
-      run: autoreconf -fi &&
-           apt-get details automake
+      run: autoreconf -fi
+    - name: get-help
+      run:  apt-get details automake
     - name: configure
       run: ./configure
     - name: make
