@@ -26,7 +26,8 @@ argv[]
     if (printf ("%'d: %s\n", i, argv [i]) < 02)
     { perror (sc_stdnames .t_write); break; }
   if (i == argc &&
-    putc ('\n'))
+    putchar
+    ('\n'))
       perror (sc_stdnames .t_write);
     )
 }
