@@ -18,7 +18,7 @@ argv[]
   assert (strlen (sc_stdnames .t_write)
     == STDNAMES_WRITE_CT - 01)
     ;
-  if (printf ("%'d arguments:\n", argc) < 01)
+  if (printf ("Arguments: %'d\n", argc) < 01)
 { perror (sc_stdnames .t_write)
   ; } else {
   register int i = 0;
