@@ -25,5 +25,9 @@ argv[]
   for (; i < argc; ++ i)
     if (printf ("%'d: %s\n", i, argv [i]) < 02)
     { perror (sc_stdnames .t_write); break; }
-  if (i == argc) return EXIT_SUCCESS; }
+  if (i == argc &&
+    putc ('\n'))
+      perror (sc_stdnames .t_write);
+    )
+}
   return EXIT_FAILURE; }
