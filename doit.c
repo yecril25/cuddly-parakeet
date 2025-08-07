@@ -27,7 +27,8 @@ argv[]
     { perror (sc_stdnames .t_write); break; }
   if (i == argc &&
     putchar
-    ('\n'))
+    ('\n') != '\n'
+    )
       perror (sc_stdnames .t_write);
 }
   return EXIT_FAILURE; }
