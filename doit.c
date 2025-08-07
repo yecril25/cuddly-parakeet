@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>
+#include<assert.h>
 enum StandardNames { STDNAMES_WRITE };
 enum StandardNamesCount
 { STDNAMES_WRITE_CT = 06
