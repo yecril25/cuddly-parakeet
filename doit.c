@@ -29,6 +29,5 @@ argv[]
     putchar
     ('\n'))
       perror (sc_stdnames .t_write);
-    )
 }
   return EXIT_FAILURE; }
