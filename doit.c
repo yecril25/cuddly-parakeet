@@ -33,7 +33,7 @@ argv[]
     (LC_ALL,
     sc_stdnames .t_locale
     + STDNAMES_LOCALE_CT - 01))
-  {
+  { SET_DEFAULT_LOCALE_SUCCEEDED:
     register char const
     *const my_message_locale
     = setlocale (LC_MESSAGES, NULL);
@@ -48,6 +48,10 @@ argv[]
     {
       GET_MESSAGE_LOCALE_FAILED:
       perror (sc_stdnames .t_locale); }}
+  else
+  {
+    SET_DEFAULT_LOCALE_FAILED:
+    perror (sc_stdnames .t_locale); }
   if (printf ("Arguments: %'d\n", argc) < 01)
 { perror (sc_stdnames .t_write)
   ; } else {
