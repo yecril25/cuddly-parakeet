@@ -47,7 +47,7 @@ argv[]
     else
     {
       GET_MESSAGE_LOCALE_FAILED:
-      perror (sc_stdnames .t_locale); }
+      perror (sc_stdnames .t_locale); }}
   if (printf ("Arguments: %'d\n", argc) < 01)
 { perror (sc_stdnames .t_write)
   ; } else {
