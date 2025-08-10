@@ -9,7 +9,8 @@ enum NameCount
 STDNAME_WRITE_CT
 = 06,
 STDNAME_LOCALE_CT
-= 07, LOCNAME_PL_CT = 03
+= 07,
+LOCNAME_PL_CT = strlen ("pl_PL.UTF-8") + 01
 };
 struct stdnames
 {
