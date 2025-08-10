@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: prepare 
-      run: locale-gen pl
+    - name: locale-pl 
+      run: sudo locale-gen pl
     - name: autoreconf
       run: autoreconf -fi
     - name: get-help
