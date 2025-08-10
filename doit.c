@@ -8,8 +8,8 @@ enum NameCount
 {
 STDNAME_WRITE_CT
 = 06,
-STDNAME
-_LOCALE_CT = 07, LOCNAME_PL_CT = 03
+STDNAME_LOCALE_CT
+= 07, LOCNAME_PL_CT = 03
 };
 struct stdnames
 {
