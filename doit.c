@@ -4,35 +4,47 @@
 #include <locale.h>
 #include<assert.h>
 enum StandardNames { STDNAMES_WRITE };
-enum StandardNamesCount
+enum NameCount
 {
-STDNAMES_WRITE_CT = 06,
-STDNAMES_LOCALE_CT = 07
+STDNAME_WRITE_CT
+= 06,
+STDNAME
+_LOCALE_CT = 07, LOCNAME_PL_CT = 03
 };
 struct stdnames
 {
 char
-t_write [STDNAMES_WRITE_CT],
-t_locale [STDNAMES_LOCALE_CT]
+t_write [STDNAME_WRITE_CT
+],
+t_locale [STDNAME_LOCALE_CT
+]
 ; }
 const sc_stdnames = { "write", "locale"
 };
+struct locnames
+{ char t_pl [LOCNAME_PL_CT]; } const 
+sc_locnames = { "pl" };
 int main (
 int argc, char const *const 
 argv[]
 )
 {
   assert (strlen (sc_stdnames .t_write)
-    == STDNAMES_WRITE_CT - 01)
+    == STDNAME_WRITE_CT
+    - 01)
     ;
   assert
     (strlen (sc_stdnames .t_locale)
-    == STDNAMES_LOCALE_CT - 01);
+    == STDNAME_LOCALE_CT
+    - 01);
+  assert
+    (strlen (sc_locnames .t_pl)
+    == LOCNAME_PL_CT - 01);
   if
     (setlocale
     (LC_ALL,
-    sc_stdnames .t_locale
-    + STDNAMES_LOCALE_CT - 01))
+    sc_LOFnames
+    .t_pl))
   { SET_DEFAULT_LOCALE_SUCCEEDED:
     register char const
     *const my_message_locale
