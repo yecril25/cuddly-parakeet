@@ -23,7 +23,7 @@ const sc_stdnames = { "write", "locale"
 };
 struct locnames
 { char t_pl [LOCNAME_PL_CT]; } const 
-sc_locnames = { "pl" };
+sc_locnames = { "pl_PL.UTF-8" };
 int main (
 int argc, char const *const 
 argv[]
