@@ -9,10 +9,12 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-pl-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+    - name: prepare 
+      run: locale-gen pl
     - name: autoreconf
       run: autoreconf -fi
     - name: get-help
