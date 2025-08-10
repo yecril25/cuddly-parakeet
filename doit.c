@@ -43,7 +43,7 @@ argv[]
   if
     (setlocale
     (LC_ALL,
-    sc_LOFnames
+    sc_locnames
     .t_pl))
   { SET_DEFAULT_LOCALE_SUCCEEDED:
     register char const
