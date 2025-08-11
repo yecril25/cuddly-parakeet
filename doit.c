@@ -3,6 +3,7 @@
 #include <string.h>
 #include <locale.h>
 #include<assert.h>
+#include<gettext.h>
 enum StandardNames { STDNAMES_WRITE };
 enum NameCount
 {
