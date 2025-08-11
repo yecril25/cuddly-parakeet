@@ -65,7 +65,9 @@ argv[]
   {
     SET_DEFAULT_LOCALE_FAILED:
     perror (sc_stdnames .t_locale); }
-  if (printf ("Arguments: %'d\n", argc) < 01)
+  if (printf (gettext (
+    "Arguments: %'d\n")
+    , argc) < 01)
 { perror (sc_stdnames .t_write)
   ; } else {
   register int i = 0;
