@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: locale-pl 
-      run: sudo locale-gen pl
+    - name: autopoint 
+      run: sudo apt-get install autopoint
     - name: autoreconf
       run: autoreconf -fi
     - name: get-help
