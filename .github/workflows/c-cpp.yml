@@ -25,7 +25,7 @@ jobs:
     - name: get-help
       run:  apt-cache show automake
     - name: configure
-      run: ./configure
+      run: sh -x configure
     - name: make
       run: make
     - name: make check
