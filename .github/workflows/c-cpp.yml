@@ -16,7 +16,7 @@ jobs:
     - name: autopoint 
       run: sudo apt-get install gettext autopoint
     - name: autoreconf
-      run: autopoint && autoreconf -fi
+      run: gettextize && autoreconf -fi
     - name: get-help
       run:  apt-cache show automake
     - name: configure
