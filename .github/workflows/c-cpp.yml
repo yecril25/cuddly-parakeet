@@ -17,12 +17,6 @@ jobs:
       run: sudo apt-get install gettext autopoint
     - name: autoreconf
       run: gettextize && autoreconf -fi
-    - name: Save the po
-      if: never ()
-      uses: actions/upload-artifact@v4.6.2
-      with:
-    # A file, directory or wildcard pattern that describes what to upload
-            path: ./po/Makevars.template       
     - name: get-help
       run:  apt-cache show automake
     - name: configure
