@@ -16,7 +16,7 @@ jobs:
     - name: autopoint 
       run: sudo apt-get install autopoint
     - name: autoreconf
-      run: autoreconf -fi
+      run: autopoint && autoreconf -fi
     - name: get-help
       run:  apt-cache show automake
     - name: configure
